@@ -1,0 +1,7 @@
+#+TITLE:counsel_cscope
+
+* Introduction
+
+Use the ivy interface to navigate tags generated through =cscope=. This is done by modifying the existing package [[https://github.com/syohex/emacs-counsel-gtags][counsel-gtags]] to use =cscope= commands intead of GNU global.
+
+/Under development..../
