@@ -53,5 +53,6 @@
 
 (defun counsel-cscope--construct-cmd (prompt)
   "Construt the shell command string for the given PROMPT."
-  (concat "cscope -d -f" counsel-cscope-database " " counsel-cscope--complete-options))
+  (let ((option (cdr (assoc prompt counsel-cscope--complete-options))))
+      (concat "cscope -d -f" counsel-cscope-database " " option)))
 
